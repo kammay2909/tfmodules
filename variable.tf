@@ -6,6 +6,6 @@ variable "key_name" {
   type = string
 }
 
-variable "vmtype" {
+variable "instance_type" {
   type = string
 }
