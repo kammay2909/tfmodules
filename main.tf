@@ -2,6 +2,7 @@ resource "aws_instance" "ec2instance" {
   ami           = var.ami_id
   key_name      = var.key_name
   instance_type = var.vmtype
+  count         = "1"
 
   tags = {
     Name = "NexusServer"
